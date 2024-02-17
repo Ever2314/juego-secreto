@@ -32,7 +32,7 @@ function verificarIntento(){
         asignartextoelemento( 'p', ' El numero secreto es menor');
 
      } else {
-        asignartextoelemento( 'p', 'El numero screto es mayor');
+        asignartextoelemento( 'p', 'El numero secreto es mayor');
      }
      intentos++;
      limpiarcaja();
@@ -53,7 +53,7 @@ function generarNumeroSecreto(){
     console.log(listaNumerosSorteados);
     //si ya sorteamos todos los numeros
     if( listaNumerosSorteados.length == numeroMaximo){
-        asignartextoelemento('p', 'Ya se sostearon todos los numeros');
+        asignartextoelemento('p', 'Ya se sortearon todos los numeros');
     } else {
     //si el nuemero esta incluido en lista
     if( listaNumerosSorteados.includes(numeroGenerado)){
@@ -66,7 +66,7 @@ function generarNumeroSecreto(){
 }
 function condicionesiniciales(){
     asignartextoelemento('h1','juego del secreto');
-    asignartextoelemento('p',`inica un numero del 1 al ${numeroMaximo}`);
+    asignartextoelemento('p',`indica un numero del 1 al ${numeroMaximo}`);
     numerosecreto= generarNumeroSecreto();
     intentos=1;
 }
